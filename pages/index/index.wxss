@@ -1,0 +1,132 @@
+/**index.wxss**/
+.swiper {
+ height: 400rpx;
+ width: 100%;
+}
+.swiper image {
+ height: 100%;
+ width: 100%;
+}
+.rank{  
+  height:"100px"; 
+  flex-direction: row;  
+}  
+
+.mr-3{
+  margin-right:6rpx;
+}
+.recommand image{
+  width:100%
+}
+.align-center{
+  text-align: center
+}
+.my-navbar__slider{
+  background: none
+}
+.my-navbar__title{
+  padding:8rpx 20rpx;  
+}
+.weui-bar__item_on .my-navbar__title{
+  color:#fff;
+  background: #1F96F2;
+  border-radius:30rpx;
+  padding:8rpx 20rpx;
+}
+.my-tab__panel{
+  padding-top:120rpx;
+}
+.scroll-view_H{
+  white-space: nowrap;
+}
+.scroll-view-item{
+  height:222px;
+}
+.scroll-view-item_H{
+  display: inline-block;
+  width:55%;
+  height:222px;
+  margin-left:10rpx;
+  margin-right:10rpx;
+  border:2rpx solid #F0F0F0;
+  border-radius:10rpx;
+  position:relative
+}
+.scroll-view-item_H:first-child{
+  margin-left:20rpx;
+}
+.scroll-view-item_H:last-child{
+  margin-right:20rpx;
+}
+.scroll-view-item_H image{
+  width:100%;
+  height:100%;
+  display:block;
+}
+.weui-cell__hd-img{
+  width:46rpx;
+  height:46rpx;
+}
+.weui-cells_my_cell{
+ height:46rpx; 
+}
+.weui-cell__bd-title{
+  color:#313131;
+  font-weight: bold;
+  margin-left: 46rpx;
+}
+.weui-cell__ft-desc{
+  color:#636363;
+  font-size: 28rpx;
+}
+.my_grids,.my_grids .my_grid{
+  border:0
+}
+.my_grid{
+  padding-top:0;
+  padding-bottom: 0
+}
+.mask{
+  position:absolute;
+  background: none;
+  width:100%;
+  bottom:0;
+  color:#fff;
+  font-size: 30rpx;
+  margin-top:0
+}
+.mask .my_cell{
+  padding-left:15rpx;
+  padding-right:15rpx;
+}
+.author{
+  margin-top:10rpx;
+  line-height: 200%;
+}
+.mask2{
+  color:#fff;
+  font-size: 30rpx;
+  position: absolute;
+  background:rgba(0,0,0,0.5);
+  padding:10rpx 20rpx;
+  right:0;
+  top:0;
+}
+.mask2 image{
+  display: inline-block
+}
+.pixivsion .scroll-view-item_H{
+  border-top:18rpx solid #1F96F2;
+}
+.mask3{
+  background:rgba(255,255,255,0.7);
+  color:#353535;
+  position:absolute;
+  bottom:0;
+  font-size: 30rpx;
+  padding:0 0 36rpx 4%;
+  width:96%;
+}
+.pixivsion_more image{
+  width:100%
+}

@@ -1,0 +1,10 @@
+<view mode="widthFix" style="text-align:center;" bindtap="people">
+<view style="text-align:center;font-family:	Microsoft YaHei;color:grey;font-size:20px;">最具人气球员投票入口</view>
+ <image class="vote" src="http://opgfoveg6.bkt.clouddn.com/votepeople" alt="为你最喜欢的球员投票吧" bindtap="people" > </image>
+</view>
+
+  <view mode="widthFix" style="text-align:center;">
+  <view style="text-align:center;font-family:	Microsoft YaHei;color:grey;font-size:20px;">激扬留言墙入口</view>
+ <image src="http://opgfoveg6.bkt.clouddn.com/write"  alt="想跟他说啥就在这里说吧"> </image>
+ </view>
+  

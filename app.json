@@ -1,0 +1,50 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/photo/photo",
+    "pages/tool/tool",
+    "pages/mine/mine",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText":"南开激扬排球",
+    "navigationBarTextStyle": "black"
+    },
+    "tabBar": {  
+   "color":"#000000",
+   "selectedColor": "#000000",  
+   "borderStyle":"white",  
+   "list": [{  
+     "selectedIconPath": "imgs/game1.png",  
+     "iconPath": "imgs/game1.png", 
+     "text":"看球",
+     "pagePath":"pages/index/index"  
+   },{  
+     "selectedIconPath": "imgs/vote1.png",  
+     "iconPath": "imgs/vote1.png",
+     "text":"搞事",
+     "pagePath": "pages/logs/logs"  
+   },
+   {
+     "selectedIconPath":"imgs/camera.png",
+     "iconPath":"imgs/camera.png",
+     "text":"送他上墙！",
+     "pagePath":"pages/photo/photo"
+   },
+   {
+     "selectedIconPath":"imgs/tool2.png",
+     "iconPath":"imgs/tool2.png",
+     "text":"正事",
+     "pagePath":"pages/tool/tool"
+   },
+      {  
+     "selectedIconPath": "imgs/mine.png",  
+     "iconPath": "imgs/mine.png",
+     "text":"联系我们",  
+     "pagePath":"pages/mine/mine"  
+ 
+   }]  
+ }   
+    }

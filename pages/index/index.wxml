@@ -1,0 +1,121 @@
+<!--index.wxml-->  
+  <swiper autoplay="auto" class="swiper" indicator-dots="true" autoplay="true" interval="5000" duration="1000">  
+   <block wx:for="{{movies}}" wx:for-index="index">  
+    <swiper-item>  
+     <image src="{{item.url}}" class="slide-image" mode="aspectFill"/>  
+    </swiper-item>  
+   </block>  
+  </swiper> 
+                    <!--排行版rank-->
+                   <!--pages/index/index.wxml-->
+
+                    <!--排行版rank-->
+                    <view class="rank">
+                        <view class="section">
+                            <view class="section section_gap">
+                                <view class="section__title">
+                                    <view class="weui-cells my_cells" style="background: none;margin-top:0；height:46rpx">
+                                        <view class="weui-cell my_cell">
+                                            <view class="weui-cell__hd">
+                                                    <image src="../../imgs/crown.png" class="weui-cell__hd-img"></image>
+                                            </view>
+                                            <view class="weui-cell__bd-title">战队Gallery</view>
+
+                                        </view>
+                                    </view>
+                                </view>
+                                <scroll-view class="scroll-view_H" scroll-x="true" scroll-left="50" style="width: 100%">
+                                    <view class="scroll-view-item_H" style="justify-content: space-between;"wx:for="{{chahuaRankArray}}" wx:for-item="item">
+                                        <image src="{{ item.src }}" mode="aspectFill" style="width:100%"></image>
+                                        <view class="weui-cells my_cells mask" style="background:rgba(0,0,0,0.5);">
+                                            <view class="weui-cell my_cell">
+                                                <view class="weui-cell__bd">
+                                                    <view>{{ item.paintName }}</view>
+                                                </view>
+                                               
+                                            </view>
+                                        </view>
+                                    </view>
+                                </scroll-view>
+                            </view>
+                        </view>
+                    </view><!--/.rank-->
+                    <!--推荐recommand-->
+                    <view class="recommand">
+                        <view class="section">
+                            <view class="section section_gap" >
+                                <view class="section__title">
+                                    <view class="weui-cells my_cells" style="background: none;margin-top:0" >
+                                        <view class="weui-cell my_cell" >
+                                            <view class="weui-cell__hd">
+                                                <image src="../../imgs/likes.png"style="width:46rpx;height:46rpx;"></image>
+                                            </view>
+                                            <view class="weui-cell__bd weui-cell__bd-title" style="justify-content: space-around;">Editor's Choice</view>
+                                        </view>
+                                    </view>
+                                </view>
+                                <view style="position:relative;width:50%;margin-right:0;display:inline-block " wx:for="{{recommendArray}}" wx:for-item="item" >
+                                    <image src="{{item.src}}" mode="aspectFill"></image>
+                                    <view class="weui-cells my_cells mask" >
+                                        <view class="weui-cell my_cell">
+                                            <view class="weui-cell__bd"></view>
+                                            <view class="weui-cell__ft">
+                                               
+                                            </view>
+                                        </view>
+                                    </view>
+                                </view>
+                            </view>
+                        </view>
+                    </view><!--/.recommand-->
+                    <!--插画pixivsion-->
+                    <!--/.pixivsion-->
+                <!--./weui-tab__content-->
+                <view class="weui-tab__content" hidden="{{activeIndex != 1}}">
+                    <!--排行版rank-->
+                    <view class="rank">
+                        <view class="section">
+                            <view class="section section_gap">
+                                <view class="section__title">
+                                    <view class="weui-cells my_cells" style="background: none;margin-top:0">
+                                        <view class="weui-cell my_cell">
+                                            <view class="weui-cell__hd">
+                                                    <image src="../../imgs/crown.png" class="weui-cell__hd-img"></image>
+                                            </view>
+                                           
+                                        </view>
+                                    </view>
+                                </view>
+                                <scroll-view class="scroll-view_H" scroll-x="true" scroll-left="50" style="width: 100%">
+                                    <view class="scroll-view-item_H" wx:for="{{manhuaRankArray}}" wx:for-item="item">
+                                        <view class="mask2" wx:if="{{item.num>1}}">
+                                            <image src="../../imgs/copy.png" style="width:32rpx;height:32rpx;margin-right:8rpx;"></image>{{item.num}}
+                                        </view>
+                                        <image src="{{ item.src }}" mode="{{item.mode}}"></image>
+                                        <view class="weui-cells my_cells mask" style="background:rgba(0,0,0,0.5);">
+                                            <view class="weui-cell my_cell">
+                                                <view class="weui-cell__bd">
+                                                    <view>{{ item.paintName }}</view>
+        
+                                                </view>
+                                                <view class="weui-cell__ft">
+                                                   
+                                                </view>
+                                            </view>
+                                        </view>
+                                    </view>
+                                </scroll-view>
+                            </view>
+                        </view>
+                    </view><!--/.rank-->
+                    <!--推荐recommand-->
+<!--/.recommand-->
+                    <!--插画pixivsion-->
+<!--/.pixivsion-->
+                </view><!--./weui-tab__content-->
+              
+
+
+        
+    
+
