@@ -1,11 +1,12 @@
 # Wechat-app
-A demo to display basic information of a college club and interact with users.
+A demo to display basic information of a college club and interact with users.<br>
 
 
-用于展示大学社团信息已经与用户互动的微信小程序
+用于展示大学社团信息已经与用户互动的微信小程序<br>
+![image](https://github.com/liferjane/Wechat-app/blob/master/wechat-app-gif1.gif)
 
 
-实现的功能：
+实现的功能：<br>
 
 
 1.在首页第一栏swiper滚动展示，第二栏的图片可以左右滑动，下面的图片可以上下滚动
